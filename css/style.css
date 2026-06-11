@@ -234,7 +234,7 @@ body {
 
 @media (max-width: 575px) {
     .login-container h1{
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .subtitle{
