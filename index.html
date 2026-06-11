@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AVEC GLOBAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="left-side">
+            <div class="brand">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="login-container">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Enter your details to manage your dashboard.</p>
+                <form>
+                    <div class="mb-4">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" placeholder="admin@avce.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <div class="password-box">
+                            <input id="password" type="password" class="form-control" value="avce1234">
+                            <i id="togglePassword" class="bi bi-eye-slash toggle-icon"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="rem"><label
+                                class="form-check-label" for="rem" style="font-size: 13px;">Remember Me</label></div> <a
+                            href="#" class="forgotPasswordLink" style="font-size: 13px; color: var(--primary-blue); text-decoration: none;">Forgot
+                            Password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Log In</button>
+                </form>
+                <div class="forgot-password">
+                    <a href="#" style="font-size: 13px; color: var(--primary-blue); text-decoration: none;">Forgot
+                        Password?</a>
+                </div>
+                <div class="portal-user">
+                    Click here to go to your <a href="#">User Portal</a>
+                </div>
+            </div>
+            <div class="login-footer">
+                Copyright © 2026 Abroad Visa & Education Consultants. All Rights Reserved.
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="blue-card">
+                <div class="portal-link-box">
+                    <a href="#" class="portal-link">
+                        Click here to go to your User Portal
+                    </a>
+                </div>
+                <img src="img/Meeting-Conference.png" class="meetingConference" alt="Meeting Conference">
+                <div style="margin-top: 30px;">
+                    <h2 style="font-size: 32px; font-weight: 700; line-height: 1.2;">
+                        Elevate Your Team’s <br> Productivity & Workflow.
+                    </h2>
+                    <p style="font-size: 15px; margin-top: 15px; opacity: 0.9; max-width: 450px;">
+                        Access your personalized CRM dashboard to streamline tasks and manage your operations with ease.
+                    </p>
+                </div>
+                <div class="copyright-text">
+                    Copyright © 2026 Abroad Visa & Education Consultants. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

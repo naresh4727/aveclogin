@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #3b82f6;
+    --dark-text: #0f172a;
+    --gray-text: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side {
+    width: 55%;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.brand img {
+    height: 35px;
+}
+
+.login-container {
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
+}
+
+.login-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: var(--gray-text);
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+    border: 1.5px solid var(--border-color);
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(135deg, #5aa9e6, #2f80c9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--gray-text);
+}
+
+.portal-user {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--gray-text);
+    display: none;
+}
+
+.portal-user a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.right-side {
+    width: 45%;
+    padding: 20px;
+}
+
+.blue-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #5aa9e6, #2f80c9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.meetingConference {
+    width: 85%;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+}
+
+.portal-link-box{
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    z-index: 10;
+}
+
+.portal-link{
+    color: rgba(255,255,255,0.95);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(255,255,255,0.15);
+    padding: 8px 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+}
+
+.portal-link:hover{
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+}
+
+.copyright-text{
+    position: absolute;
+    bottom: 35px;
+    right: 40px;
+    left: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+}
+
+.login-footer{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    display: none;
+}
+
+.forgotPasswordLink{
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    h2{
+        font-size: 28px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .right-side {
+        display: none;
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .login-footer{
+        display: block;
+    }
+
+    .forgotPasswordLink{
+        display: block;
+    }
+
+    .portal-user{
+        display: block;
+    }
+
+    .forgot-password{
+        display: none;
+    }
+
+    body{
+        overflow: auto;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .login-container h1{
+        font-size: 32px;
+    }
+
+    .subtitle{
+        margin-bottom: 25px;
+    }
+
+    .brand{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-height: 667px) {
+    body{
+        overflow: auto;
+    }
+
+    .main-wrapper{
+        height: auto;
+        width: auto;
+    }
+}
